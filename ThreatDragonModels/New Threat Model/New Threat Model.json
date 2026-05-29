@@ -1059,7 +1059,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Załącza plik na stronie",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1073,16 +1073,109 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Załącza plik na stronie"
             ],
-            "id": "b8a7e317-f1b6-4128-b6e2-0d8570c5744c",
+            "id": "2e8aedbd-20d2-4b05-8e90-e7bbb6505074",
             "source": {
-              "x": 310,
-              "y": 290
+              "x": 260,
+              "y": 170
             },
             "target": {
-              "x": 410,
-              "y": 390
+              "cell": "65181e37-d0c9-4862-9695-1d8437650fd8",
+              "port": "9acc8dae-4ffd-4ba1-9257-6b33284aea61"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Wysyłanie pliku",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Wysyłanie pliku"
+            ],
+            "id": "716a1af7-5e40-4f93-87f7-5edcabbff62d",
+            "source": {
+              "x": 690,
+              "y": 260
+            },
+            "target": {
+              "cell": "1b23cef5-c1c5-4275-adb4-4b632dd573ae",
+              "port": "99503b8e-182f-4da3-9837-4a0481527987"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Zamieszczanie pliku na serwerze",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Zamieszczanie pliku na serwerze"
+            ],
+            "id": "ce680f82-7c36-48b0-bb01-70876c0c8456",
+            "source": {
+              "x": 742,
+              "y": 430
+            },
+            "target": {
+              "cell": "89ec5944-8258-4724-bf72-00704f3d9cdb",
+              "port": "52fc26b6-758d-4338-b5e9-9a2de0d03631"
             }
           },
           {
@@ -1121,14 +1214,14 @@
             "labels": [
               "Data Flow"
             ],
-            "id": "7e7da68b-3a07-475a-aec4-b69b15f18980",
+            "id": "11621fa5-1944-490b-81d4-725df1698a0b",
             "source": {
-              "x": 352,
-              "y": 160
+              "x": 1021,
+              "y": 98
             },
             "target": {
-              "x": 452,
-              "y": 260
+              "x": 1121,
+              "y": 198
             }
           },
           {
@@ -1253,8 +1346,8 @@
           },
           {
             "position": {
-              "x": 39.999999999999886,
-              "y": 320.0000000000002
+              "x": 1200,
+              "y": 135
             },
             "size": {
               "width": 220,
