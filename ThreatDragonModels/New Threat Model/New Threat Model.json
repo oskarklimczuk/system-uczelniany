@@ -1181,7 +1181,8 @@
             "target": {
               "cell": "65181e37-d0c9-4862-9695-1d8437650fd8",
               "port": "ec7bedcb-f88d-4f3a-bc03-b3ecd333d03b"
-            }
+            },
+            "vertices": []
           },
           {
             "shape": "flow",
