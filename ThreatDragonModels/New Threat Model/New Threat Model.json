@@ -1755,7 +1755,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Plik jest przesyłany",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1769,17 +1769,23 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Plik jest przesyłany"
             ],
-            "id": "ff918a7c-c51b-4d6c-8e23-24355b1ed998",
+            "id": "596722aa-03a1-4615-b097-dc57176423cc",
             "source": {
               "x": 620,
-              "y": 230
+              "y": 440
             },
             "target": {
-              "cell": "1b23cef5-c1c5-4275-adb4-4b632dd573ae",
-              "port": "9acc8dae-4ffd-4ba1-9257-6b33284aea61"
-            }
+              "x": 630,
+              "y": 240
+            },
+            "vertices": [
+              {
+                "x": 580,
+                "y": 320
+              }
+            ]
           }
         ],
         "description": "Plik"
