@@ -1960,12 +1960,25 @@
                   "new": false,
                   "number": 10,
                   "score": ""
+                },
+                {
+                  "id": "69464d11-335e-49be-a11a-24f1ffa9d2c2",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "tampering": 0,
                 "repudiation": 0,
-                "informationDisclosure": 1,
+                "informationDisclosure": 2,
                 "denialOfService": 0
               }
             }
@@ -2028,6 +2041,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 10
+    "threatTop": 11
   }
 }
