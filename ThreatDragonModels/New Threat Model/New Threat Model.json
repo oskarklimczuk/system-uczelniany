@@ -269,7 +269,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Frontend"
+                "text": "Frontend strony"
               },
               "body": {
                 "stroke": "#333333",
@@ -365,7 +365,7 @@
             "id": "65181e37-d0c9-4862-9695-1d8437650fd8",
             "data": {
               "type": "tm.Process",
-              "name": "Frontend",
+              "name": "Frontend strony",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -682,7 +682,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Backend"
+                "text": "Backend strony"
               },
               "body": {
                 "stroke": "#333333",
@@ -778,7 +778,7 @@
             "id": "1b23cef5-c1c5-4275-adb4-4b632dd573ae",
             "data": {
               "type": "tm.Process",
-              "name": "Backend",
+              "name": "Backend strony",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
