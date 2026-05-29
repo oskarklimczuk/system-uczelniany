@@ -1641,7 +1641,7 @@
               "threats": [
                 {
                   "id": "3c8ffcee-ca9b-49e3-85ce-5b63afbd1c4f",
-                  "title": "New STRIDE threat",
+                  "title": "Atak DOS",
                   "status": "Open",
                   "severity": "High",
                   "type": "Denial of service",
@@ -1654,20 +1654,20 @@
                 },
                 {
                   "id": "54b19b78-1a92-4427-8e10-23d6d07cb9f7",
-                  "title": "New STRIDE threat",
+                  "title": "Nieautoryzowana modyfikacja danych",
                   "status": "Open",
                   "severity": "High",
                   "type": "Tampering",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "Nieautoryzowana modyfikacja danych polega na zmianie informacji w systemie przez osobę nie posiadającą odpowiednich uprawnień. \n\nW systemie uczelnianym może to być np.: zmiana/ podmiana pliku pracy, metadanych przesyłania, ocen, komentarzy bez wiedzy administratora lub właściciela danych.",
+                  "mitigation": "1. Walidacja pliku: sprawdzenie rozszerzenia, rozmiaru, zawartości\n2. Zapisywanie historii operacji w dzienniku systemowym - data przesłania pliku, identyfikator użytkownika, IP użytkownika, wykonana operacja\n3. Uwierzytelnienie użytkowników - wymagane logowanie do przesłania pliku\n4. Kontrola uprawnień - sprawdzanie czy użytkownik posiada uprawnienia do wykonywania danej operacji, np. przesłania pliku\n5. Ograniczenie możliwości modyfikacji danych - użytkownik nie powinien mieć możliwości samodzielnej zmiany informacji, np. statusu pracy czy daty przesłania",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 4,
-                  "score": ""
+                  "score": "8/10"
                 },
                 {
                   "id": "e5b9ea56-8402-4393-b382-290e9321169e",
-                  "title": "New STRIDE threat",
+                  "title": "Brak odpowiednich logów w dzienniku zdarzeń",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Repudiation",
@@ -1681,10 +1681,10 @@
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "tampering": 1,
-                "repudiation": 1,
+                "tampering": 2,
+                "repudiation": 2,
                 "informationDisclosure": 0,
-                "denialOfService": 1,
+                "denialOfService": 2,
                 "elevationOfPrivilege": 0
               }
             }
@@ -1806,7 +1806,7 @@
               "threats": [
                 {
                   "id": "5d265ee2-3671-4df2-a4b6-96236729653f",
-                  "title": "New STRIDE threat",
+                  "title": "SQL injection",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Spoofing",
@@ -1819,7 +1819,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 3,
                 "repudiation": 0
               }
             }
@@ -1950,7 +1950,7 @@
               "threats": [
                 {
                   "id": "3a0cb31a-0f5f-4aaf-8b7c-01709123cc92",
-                  "title": "New STRIDE threat",
+                  "title": "IDOR",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Information disclosure",
@@ -1963,7 +1963,7 @@
                 },
                 {
                   "id": "69464d11-335e-49be-a11a-24f1ffa9d2c2",
-                  "title": "New STRIDE threat",
+                  "title": "Widoczność zasobów z poziomu Internetu",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Information disclosure",
@@ -1978,7 +1978,7 @@
               "threatFrequency": {
                 "tampering": 0,
                 "repudiation": 0,
-                "informationDisclosure": 2,
+                "informationDisclosure": 4,
                 "denialOfService": 0
               }
             }
@@ -2041,6 +2041,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 11
+    "threatTop": 12
   }
 }
