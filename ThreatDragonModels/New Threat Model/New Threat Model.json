@@ -1059,7 +1059,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Wysyłanie pliku",
+              "name": "Data Flow",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1073,66 +1073,16 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Wysyłanie pliku"
+              "Data Flow"
             ],
-            "id": "49934f85-3f8f-42d0-8826-474101f44ae5",
+            "id": "b8a7e317-f1b6-4128-b6e2-0d8570c5744c",
             "source": {
-              "x": 260,
-              "y": 185
+              "x": 310,
+              "y": 290
             },
             "target": {
-              "cell": "65181e37-d0c9-4862-9695-1d8437650fd8",
-              "port": "9acc8dae-4ffd-4ba1-9257-6b33284aea61"
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
+              "x": 410,
+              "y": 390
             }
           },
           {
@@ -1171,14 +1121,14 @@
             "labels": [
               "Data Flow"
             ],
-            "id": "b8a7e317-f1b6-4128-b6e2-0d8570c5744c",
+            "id": "7e7da68b-3a07-475a-aec4-b69b15f18980",
             "source": {
-              "x": 310,
-              "y": 290
+              "x": 352,
+              "y": 160
             },
             "target": {
-              "x": 410,
-              "y": 390
+              "x": 452,
+              "y": 260
             }
           },
           {
