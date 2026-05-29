@@ -136,7 +136,7 @@
           },
           {
             "position": {
-              "x": 1110,
+              "x": 1120,
               "y": 430.0000000000002
             },
             "size": {
@@ -261,11 +261,11 @@
           {
             "position": {
               "x": 615,
-              "y": 110
+              "y": 120
             },
             "size": {
-              "width": 110,
-              "height": 110
+              "width": 150,
+              "height": 140
             },
             "attrs": {
               "text": {
@@ -398,7 +398,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Logowanie",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -412,9 +412,56 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Logowanie"
             ],
-            "id": "da406a66-0ad9-4fe6-a125-5aee4d9e6ebb",
+            "id": "398fb3a7-b11b-479a-96f2-366f2168cf18",
+            "source": {
+              "x": 260,
+              "y": 120
+            },
+            "target": {
+              "cell": "65181e37-d0c9-4862-9695-1d8437650fd8",
+              "port": "99503b8e-182f-4da3-9837-4a0481527987"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "API do backend",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "API do backend"
+            ],
+            "id": "005cd4b1-72cc-4d68-ba54-7c7928a588b2",
             "source": {
               "cell": "65181e37-d0c9-4862-9695-1d8437650fd8",
               "port": "87d81960-2237-42b6-97b8-283b24250d3d"
@@ -422,6 +469,58 @@
             "target": {
               "cell": "1b23cef5-c1c5-4275-adb4-4b632dd573ae",
               "port": "99503b8e-182f-4da3-9837-4a0481527987"
+            },
+            "vertices": [
+              {
+                "x": 730,
+                "y": 340
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Zapytanie SQL",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Zapytanie SQL"
+            ],
+            "id": "cfb95d37-1e9c-4e20-b85c-40395e50a032",
+            "source": {
+              "x": 744,
+              "y": 430
+            },
+            "target": {
+              "cell": "88962921-ac30-4bf5-bdd6-f49522eeb7c5",
+              "port": "619ac2db-d94c-4114-858c-6af0baddce42"
             }
           },
           {
@@ -444,7 +543,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Dane użytkownika",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -458,12 +557,58 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Dane użytkownika"
             ],
-            "id": "a237c426-40e6-4baa-9a77-c26116324fb8",
+            "id": "c3939e39-d74d-4a36-9e40-c6a0b7bf42ea",
             "source": {
-              "x": 260,
-              "y": 170
+              "cell": "88962921-ac30-4bf5-bdd6-f49522eeb7c5",
+              "port": "56f32168-4499-4a04-9f5b-5eb1ba22488a"
+            },
+            "target": {
+              "cell": "1b23cef5-c1c5-4275-adb4-4b632dd573ae",
+              "port": "87d81960-2237-42b6-97b8-283b24250d3d"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Odpowiedź",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Odpowiedź"
+            ],
+            "id": "2d2272a5-0285-409f-adbf-65260d3f00e5",
+            "source": {
+              "cell": "1b23cef5-c1c5-4275-adb4-4b632dd573ae",
+              "port": "9acc8dae-4ffd-4ba1-9257-6b33284aea61"
             },
             "target": {
               "cell": "65181e37-d0c9-4862-9695-1d8437650fd8",
@@ -490,7 +635,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Odpowiedź (przekierowanie bądź błąd)",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -504,26 +649,26 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Odpowiedź (przekierowanie bądź błąd)"
             ],
-            "id": "8ea09d0a-fba0-414c-bbdb-58ee1bb6d0f0",
+            "id": "7f9e09af-76d5-40c8-8cf6-aad1a19d6e95",
             "source": {
-              "x": 725,
-              "y": 455
+              "cell": "65181e37-d0c9-4862-9695-1d8437650fd8",
+              "port": "9acc8dae-4ffd-4ba1-9257-6b33284aea61"
             },
             "target": {
-              "x": 1080,
-              "y": 450
+              "cell": "c7367ec6-8765-4903-85ea-b961847409e5",
+              "port": "3f5c69e0-ae11-4f06-89e5-2253ed3ed98b"
             }
           },
           {
             "position": {
               "x": 615,
-              "y": 420.0000000000002
+              "y": 405.0000000000002
             },
             "size": {
-              "width": 110,
-              "height": 110
+              "width": 150,
+              "height": 140
             },
             "attrs": {
               "text": {
