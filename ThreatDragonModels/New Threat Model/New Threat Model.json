@@ -1613,16 +1613,36 @@
                   "new": false,
                   "number": 1,
                   "score": "8"
+                },
+                {
+                  "id": "54b19b78-1a92-4427-8e10-23d6d07cb9f7",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "tampering": 0,
+                "tampering": 1,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 1,
                 "elevationOfPrivilege": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1924,6 +1944,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 3
+    "threatTop": 4
   }
 }
