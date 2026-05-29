@@ -1789,14 +1789,18 @@
               "x": 630,
               "y": 240
             },
-            "vertices": [
-              {
-                "x": 460,
-                "y": 340
-              }
-            ],
             "tools": {
               "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
                 "boundary",
                 "button-remove",
                 "vertices",
@@ -1819,7 +1823,13 @@
                 "target-arrowhead"
               ],
               "name": null
-            }
+            },
+            "vertices": [
+              {
+                "x": 460,
+                "y": 340
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1841,7 +1851,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Wysyłanie pliku",
+              "name": "Wysyłanie pliku (studenta)",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1855,23 +1865,47 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Wysyłanie pliku"
+              "Wysyłanie pliku (studenta)"
             ],
             "id": "716a1af7-5e40-4f93-87f7-5edcabbff62d",
             "source": {
               "x": 640,
-              "y": 420
+              "y": 400
             },
             "target": {
-              "cell": "65181e37-d0c9-4862-9695-1d8437650fd8",
-              "port": "87d81960-2237-42b6-97b8-283b24250d3d"
+              "x": 620,
+              "y": 350
             },
             "vertices": [
               {
                 "x": 580,
-                "y": 330
+                "y": 310
+              },
+              {
+                "x": 620,
+                "y": 290
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           }
         ],
         "description": "Plik"
