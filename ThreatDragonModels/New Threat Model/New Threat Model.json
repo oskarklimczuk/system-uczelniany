@@ -1375,6 +1375,52 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Wykładowca otwiera plik",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Wykładowca otwiera plik"
+            ],
+            "id": "7a84ed1d-3d26-4b4b-ae61-6b12584f8b39",
+            "source": {
+              "x": 755,
+              "y": 160
+            },
+            "target": {
+              "x": 1190,
+              "y": 140
+            }
+          },
+          {
             "position": {
               "x": 605,
               "y": 405.0000000000002
@@ -1782,7 +1828,11 @@
             },
             "vertices": [
               {
-                "x": 580,
+                "x": 560,
+                "y": 350
+              },
+              {
+                "x": 560,
                 "y": 320
               }
             ]
