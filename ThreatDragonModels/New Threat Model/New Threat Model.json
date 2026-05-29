@@ -1200,7 +1200,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Umożliwia pobranie pliku",
+              "name": "Zamieszczanie pliku na serwerze o odpowiednim formacie",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1214,53 +1214,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Umożliwia pobranie pliku"
-            ],
-            "id": "2e164a12-3e26-491f-8e66-2c2737ebce2f",
-            "source": {
-              "x": 765,
-              "y": 485
-            },
-            "target": {
-              "x": 1020,
-              "y": 530
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Zamieszczanie pliku na serwerze",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Zamieszczanie pliku na serwerze"
+              "Zamieszczanie pliku na serwerze o odpowiednim formacie"
             ],
             "id": "ce680f82-7c36-48b0-bb01-70876c0c8456",
             "source": {
@@ -1270,7 +1224,8 @@
             "target": {
               "cell": "89ec5944-8258-4724-bf72-00704f3d9cdb",
               "port": "52fc26b6-758d-4338-b5e9-9a2de0d03631"
-            }
+            },
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -1535,6 +1490,82 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Umożliwia pobranie pliku",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Umożliwia pobranie pliku"
+            ],
+            "id": "2e164a12-3e26-491f-8e66-2c2737ebce2f",
+            "source": {
+              "x": 765,
+              "y": 485
+            },
+            "target": {
+              "x": 1150,
+              "y": 540
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
+          },
+          {
             "position": {
               "x": 605,
               "y": 405.0000000000002
@@ -1703,8 +1734,8 @@
                 "text": "Uwierzytelniony wykładowca"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1801,15 +1832,33 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "5d265ee2-3671-4df2-a4b6-96236729653f",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
             }
           },
           {
             "position": {
-              "x": 1021,
-              "y": 415.0000000000002
+              "x": 1160,
+              "y": 425.0000000000002
             },
             "size": {
               "width": 300,
@@ -1988,6 +2037,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 6
+    "threatTop": 7
   }
 }
