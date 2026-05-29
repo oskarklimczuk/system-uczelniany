@@ -1129,6 +1129,16 @@
             "target": {
               "x": 1020,
               "y": 530
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
             }
           },
           {
@@ -1224,8 +1234,8 @@
             },
             "vertices": [
               {
-                "x": 960,
-                "y": 610
+                "x": 950,
+                "y": 580
               }
             ]
           },
