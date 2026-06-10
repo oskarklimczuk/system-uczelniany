@@ -1667,21 +1667,21 @@
                 },
                 {
                   "id": "e5b9ea56-8402-4393-b382-290e9321169e",
-                  "title": "Brak odpowiednich logów w dzienniku zdarzeń",
+                  "title": "Koń trojański",
                   "status": "Open",
-                  "severity": "TBD",
-                  "type": "Repudiation",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Wgranie wirusa zamiast prezentacji\n\nPo pobraniu i uruchomieniu pliku przez wykładowcę nastąpi infekcja złośliwym oprogramowaniem komputera, co może spowodować pobranie danych z komputera, kradzież haseł lub przejęcie komputera przez atakującego.",
+                  "mitigation": "Dodanie antywirusa (który sprawdza pliki), whitelista sprawdzająca rozszerzenia plików i automatyczna aktualizacja antywirusa",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 9,
-                  "score": ""
+                  "score": "9/10"
                 }
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "tampering": 2,
+                "tampering": 5,
                 "repudiation": 2,
                 "informationDisclosure": 0,
                 "denialOfService": 2,
@@ -1808,18 +1808,18 @@
                   "id": "5d265ee2-3671-4df2-a4b6-96236729653f",
                   "title": "SQL injection",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "High",
                   "type": "Spoofing",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "Ataki typu SQL Injection wykorzystują dynamicznie tworzone zapytania SQL w źle zaprojektowanych witrynach internetowych. W przypadku baz danych SQL, które umożliwiają natychmiastowe wykonanie poleceń SQL oddzielonych średnikami, możliwe jest wykonanie zapytań zawierających dowolne polecenia SQL. Dzięki temu atakujący osadzając specjalnie spreparowane polecenia SQL mogą pośrednio manipulować zapytaniem wysyłanym do bazy danych przez stronę/aplikację internetową i w ten sposób określić podatność na ataki, a także przeglądać, modyfikować lub usuwać dane aplikacji.",
+                  "mitigation": "* Oczyszczanie wszystkich danych dostarczanych przez użytkownika;\n* Sprawdzenie danych dostarczonych przez użytkownika I ograniczenie ich po przez format długość i inne atrybuty dozwolonych danych wejściowych;\n* Unikać używania argumentów adresu URL.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 7,
-                  "score": ""
+                  "score": "8/10"
                 }
               ],
               "threatFrequency": {
-                "spoofing": 3,
+                "spoofing": 4,
                 "repudiation": 0
               }
             }
@@ -1952,14 +1952,14 @@
                   "id": "3a0cb31a-0f5f-4aaf-8b7c-01709123cc92",
                   "title": "IDOR",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "Critical",
                   "type": "Information disclosure",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "Atakujący przy braku uprawnień może dostać uzyskać dostęp do danych do których nie powinien mieć uprawnień. Może je dostać zmieniając ID przy pobieraniu np. prezentacji lub może zmienić wartość pola ID, aby uzyskać dostęp do konta innego użytkownika",
+                  "mitigation": "Użycie frameworka, użycie losowych identyfikatorów, kontrolować dostęp do zasobów na podstawie uprawnień użytkownika, unikać kontroli dostępu po stronie klienta",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 10,
-                  "score": ""
+                  "score": "10/10"
                 },
                 {
                   "id": "69464d11-335e-49be-a11a-24f1ffa9d2c2",
@@ -1978,9 +1978,16 @@
               "threatFrequency": {
                 "tampering": 0,
                 "repudiation": 0,
-                "informationDisclosure": 4,
+                "informationDisclosure": 5,
                 "denialOfService": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
