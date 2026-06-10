@@ -1641,16 +1641,16 @@
               "threats": [
                 {
                   "id": "3c8ffcee-ca9b-49e3-85ce-5b63afbd1c4f",
-                  "title": "Atak DOS",
+                  "title": "Atak DDoS",
                   "status": "Open",
-                  "severity": "High",
+                  "severity": "Medium",
                   "type": "Denial of service",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "Atak DDoS polega na wysłaniu ogromnej liczby zapytań do serwera przez wiele urządzeń (często wcześniej przejętych przez atakującego - działających jako tzw. botnet). Powoduje to przeciążenie serwera, który nie jest w stanie obsłużyć takiej liczby nadsyłanych żądań, co skutkuje niemożliwością świadczenia danej usługi, a w konsekwencji przerwaniem ciągłości działania (np. strony internetowej).",
+                  "mitigation": "1. Stosowanie firewalli aplikacyjnych (WAF)\n2. Ograniczanie dostępu do serwera dla adresów pochodzących wyłącznie z Polski (geoblocking)\n3. Zamieszczanie niektórych treści (np. grafik) w ramach CDN (Content Delivery Network)\n4. Optymalizacja strony pod kątem mniejszej ilości zapytań w ramach normalnego użytkowania",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 1,
-                  "score": "8"
+                  "score": "6/10"
                 },
                 {
                   "id": "54b19b78-1a92-4427-8e10-23d6d07cb9f7",
@@ -1684,16 +1684,9 @@
                 "tampering": 5,
                 "repudiation": 2,
                 "informationDisclosure": 0,
-                "denialOfService": 2,
+                "denialOfService": 5,
                 "elevationOfPrivilege": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -1972,22 +1965,31 @@
                   "id": "69464d11-335e-49be-a11a-24f1ffa9d2c2",
                   "title": "Widoczność zasobów z poziomu Internetu",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "Critical",
                   "type": "Information disclosure",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "Przesyłane pliki są widoczne z poziomu Internetu bez konieczności uwierzytelniania, przez co mogą być zaindeksowane przez silniki wyszukiwarek internetowych, a następnie odszukane w ramach tzw. \"Google hackingu\" bądź \"Google dorkingu\", czyli wyszukiwania z użyciem określonych parametrów. W sytuacji, gdy pliki zawierają dane osobowe, może dojść do naruszenia ich ochrony, ponieważ dowolna osoba może uzyskać do nich dostęp (bez przełamywania zabezpieczeń).",
+                  "mitigation": "1. Ograniczanie dostępu do plików wyłącznie do uwierzytelnionych użytkowników (z wyjątkiem umyślnie publicznych zasobów)\n2. Blokada listowania plików w katalogu\n3. Stosowanie linków wygasających po określonym okresie czasu (np. 24 godzinach lub 7 dniach)\n4. Wykorzystanie tokenów JWT (JSON Web Token)",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 11,
-                  "score": ""
+                  "score": "10/10"
                 }
               ],
               "threatFrequency": {
                 "tampering": 0,
                 "repudiation": 0,
-                "informationDisclosure": 5,
+                "informationDisclosure": 7,
                 "denialOfService": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
